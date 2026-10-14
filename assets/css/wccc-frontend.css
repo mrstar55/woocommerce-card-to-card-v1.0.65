@@ -1,0 +1,264 @@
+.wccc-payment-wrapper { direction: rtl; text-align: right; margin: 24px 0; max-width: 680px; }
+.wccc-bank-card { background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%); border-radius: 18px; padding: 24px 26px; color: #fff; box-shadow: 0 12px 30px -8px rgba(6,78,59,.4); position: relative; overflow: hidden; margin-bottom: 22px; }
+.wccc-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.wccc-bank-brand { font-size: 15px; font-weight: 700; color: #fef3c7; }
+.wccc-chip-icon { width: 44px; height: 32px; background: linear-gradient(135deg, #fcd34d, #d97706); border-radius: 6px; }
+.wccc-card-number-wrapper { margin: 18px 0; text-align: center; }
+.wccc-card-number { font-family: monospace; font-size: 23px; font-weight: 700; letter-spacing: 2px; color: #fff; direction: ltr; display: inline-block; padding: 6px 12px; background: rgba(0,0,0,.15); border-radius: 8px; cursor: pointer; }
+.wccc-card-footer { display: flex; justify-content: space-between; align-items: flex-end; font-size: 13px; }
+.wccc-copy-badge { background: rgba(255,255,255,.2); color: #fff; font-size: 11px; padding: 4px 10px; border-radius: 6px; cursor: pointer; border: 1px solid rgba(255,255,255,.25); }
+.wccc-amount-card { background: #fff; border: 2px solid #10b981; border-radius: 14px; padding: 20px; margin-bottom: 22px; }
+.wccc-payable-figure { font-size: 26px; font-weight: 800; color: #047857; margin: 8px 0; display: flex; align-items: center; gap: 8px; }
+.wccc-receipt-upload-box { background: #fff; border: 1px solid #cbd5e1; border-radius: 14px; padding: 22px; }
+.wccc-file-dropzone { border: 2px dashed #94a3b8; border-radius: 10px; padding: 20px; text-align: center; background: #f8fafc; cursor: pointer; }
+.wccc-submit-receipt-btn { background: #059669; color: #fff; border: none; border-radius: 8px; padding: 12px; font-size: 14px; font-weight: 700; width: 100%; cursor: pointer; transition: all 0.2s; }
+.wccc-submit-receipt-btn:disabled { opacity: 0.75; cursor: not-allowed; }
+@keyframes wccc-spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+.wccc-mode-card { transition: all 0.2s ease; }
+.wccc-mode-card:hover { border-color: #059669 !important; }
+.wccc-order-instructions-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 18px; margin-bottom: 18px; direction: rtl; text-align: right; color: #334155; font-size: 13px; line-height: 1.8; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+
+/* ==========================================================================
+   WCCC Card Styling & Themes (v1.0.65 - Path 2)
+   ========================================================================== */
+
+/* Shaba and Copy Elements (Additive) */
+.wccc-shaba-box {
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border: 1px dashed rgba(255, 255, 255, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    direction: ltr;
+}
+.wccc-shaba-text {
+    font-family: monospace, Tahoma, sans-serif;
+    letter-spacing: 1px;
+    direction: ltr;
+}
+.wccc-shaba-copy-btn {
+    cursor: pointer;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.22);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    direction: rtl;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+    user-select: none;
+}
+.wccc-shaba-copy-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+.wccc-bank-logo-icon {
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.wccc-copy-badge {
+    transition: all 0.2s ease;
+    user-select: none;
+}
+.wccc-copy-badge:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* 1. Theme: مدرن (سرمه‌ای/طلایی) - modern_gold */
+.wccc-bank-card.wccc-card-theme-modern_gold {
+    background: linear-gradient(135deg, #0b1329 0%, #172554 50%, #1e3a8a 100%);
+    border: 1px solid rgba(234, 179, 8, 0.45);
+    box-shadow: 0 14px 34px -10px rgba(11, 19, 41, 0.6), 0 0 16px rgba(234, 179, 8, 0.12);
+    color: #f8fafc;
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-bank-brand {
+    color: #fde047;
+    font-weight: 800;
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-chip-icon {
+    background: linear-gradient(135deg, #fef08a 0%, #eab308 50%, #ca8a04 100%);
+    border: 1px solid rgba(254, 240, 138, 0.6);
+    box-shadow: 0 2px 8px rgba(234, 179, 8, 0.4);
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-card-number {
+    background: rgba(0, 0, 0, 0.35);
+    color: #fef08a;
+    border: 1px solid rgba(234, 179, 8, 0.25);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-copy-badge {
+    background: rgba(234, 179, 8, 0.2);
+    color: #fef08a;
+    border: 1px solid rgba(234, 179, 8, 0.45);
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-copy-badge:hover {
+    background: #eab308;
+    color: #0b1329;
+    font-weight: 700;
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-shaba-box {
+    background: rgba(0, 0, 0, 0.28);
+    border-color: rgba(234, 179, 8, 0.25);
+    color: #f1f5f9;
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-shaba-copy-btn {
+    background: rgba(234, 179, 8, 0.2);
+    color: #fde047;
+    border-color: rgba(234, 179, 8, 0.4);
+}
+.wccc-bank-card.wccc-card-theme-modern_gold .wccc-shaba-copy-btn:hover {
+    background: #eab308;
+    color: #0b1329;
+}
+
+/* 2. Theme: تیره شیشه‌ای - dark_glass */
+.wccc-bank-card.wccc-card-theme-dark_glass {
+    background: rgba(15, 23, 42, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    color: #f8fafc;
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-bank-brand {
+    color: #e2e8f0;
+    font-weight: 700;
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-chip-icon {
+    background: linear-gradient(135deg, #94a3b8 0%, #475569 100%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-card-number {
+    background: rgba(0, 0, 0, 0.45);
+    color: #93c5fd;
+    border: 1px solid rgba(147, 197, 253, 0.25);
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-copy-badge {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-copy-badge:hover {
+    background: rgba(255, 255, 255, 0.26);
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-shaba-box {
+    background: rgba(0, 0, 0, 0.35);
+    border-color: rgba(255, 255, 255, 0.15);
+    color: #cbd5e1;
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-shaba-copy-btn {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+.wccc-bank-card.wccc-card-theme-dark_glass .wccc-shaba-copy-btn:hover {
+    background: rgba(255, 255, 255, 0.26);
+}
+
+/* 3. Theme: روشن مینیمال - minimal_light */
+.wccc-bank-card.wccc-card-theme-minimal_light {
+    background: #ffffff;
+    border: 1.5px solid #cbd5e1;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+    color: #0f172a;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-bank-brand {
+    color: #0f172a;
+    font-weight: 800;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-chip-icon {
+    background: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
+    border: 1px solid #94a3b8;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-card-label {
+    color: #64748b;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-card-owner {
+    color: #0f172a;
+    font-weight: 700;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-card-number {
+    background: #f8fafc;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-copy-badge {
+    background: #f1f5f9;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+    font-weight: 600;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-copy-badge:hover {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-shaba-box {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    color: #334155;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-shaba-copy-btn {
+    background: #f1f5f9;
+    color: #0f172a;
+    border-color: #cbd5e1;
+}
+.wccc-bank-card.wccc-card-theme-minimal_light .wccc-shaba-copy-btn:hover {
+    background: #0f172a;
+    color: #ffffff;
+    border-color: #0f172a;
+}
+
+/* Checkout Preview Card Theming */
+.wccc-bank-card-preview.wccc-card-theme-modern_gold {
+    background: #f0fdf4;
+    border: 1px solid #cbd5e1;
+}
+.wccc-bank-card-preview.wccc-card-theme-dark_glass {
+    background: #f8fafc;
+    border: 1px solid #94a3b8;
+}
+.wccc-bank-card-preview.wccc-card-theme-minimal_light {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .wccc-bank-card {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+    .wccc-card-number {
+        font-size: 17px !important;
+        letter-spacing: 1px !important;
+        padding: 6px 8px !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .wccc-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .wccc-copy-badge {
+        width: 100%;
+        text-align: center;
+        padding: 7px;
+        box-sizing: border-box;
+    }
+    .wccc-shaba-box {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        word-break: break-all;
+    }
+    .wccc-shaba-copy-btn {
+        align-self: flex-end;
+    }
+}
+
