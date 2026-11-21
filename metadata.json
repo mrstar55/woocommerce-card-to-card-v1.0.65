@@ -1,6 +1,6 @@
 {
-  "name": "WooCommerce Card-to-Card Payment Management (WCCC)",
-  "description": "Enterprise WooCommerce Card-to-Card payment gateway with automated SMS sync, Penny Engine reconciliation, Android POS device management, and HPOS support.",
+  "name": "WooCommerce Card-to-Card (WCCC) - Public UI Prototype",
+  "description": "An early React and TypeScript administrative UI prototype with WooCommerce-oriented frontend assets for manual card-to-card payment workflows. This public snapshot does not include the PHP server-side implementation or a complete installable WooCommerce plugin.",
   "permissions": [],
-  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "capabilities": []
 }
