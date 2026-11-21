@@ -85,12 +85,26 @@ Security-related reports should avoid exposing sensitive information.
 
 ## License
 
-This repository currently does not include an explicit
-open-source license.
+The original WCCC source code included in this public
+version 1.0.65 snapshot is licensed under the MIT License.
 
-All rights remain reserved under applicable copyright law.
-No permission to reuse, distribute, or modify this code
-is granted by an open-source license at this time.
+See the [LICENSE](LICENSE) file for the complete terms.
+
+### Third-Party Assets
+
+Third-party components and assets retain their respective
+licenses and copyrights.
+
+The bundled Vazirmatn font files are licensed under
+the SIL Open Font License 1.1 (OFL-1.1).
+
+Copyright 2015 The Vazirmatn Project Authors.
+
+The font license is available at:
+https://github.com/google/fonts/blob/main/ofl/vazirmatn/OFL.txt
+
+This repository contains an early public snapshot.
+It does not include later private development versions.
 
 ## Maintainer
 
