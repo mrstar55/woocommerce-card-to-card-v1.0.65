@@ -10,7 +10,7 @@ In markets where customers commonly pay by transferring money directly to a merc
 
 WCCC aims to bring this workflow into the WooCommerce order management process.
 
-## The Problem
+## The Problem 
 
 Traditional card-to-card payments often require merchants to handle several tasks manually:
 
