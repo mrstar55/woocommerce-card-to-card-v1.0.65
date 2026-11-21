@@ -2,8 +2,8 @@
   "name": "wccc-payment-gateway",
   "private": true,
   "version": "1.0.65",
-"license": "MIT",
-"type": "module",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 3000",
     "build": "tsc && vite build",
