@@ -85,9 +85,12 @@ Security-related reports should avoid exposing sensitive information.
 
 ## License
 
-The existing project metadata declares **GNU General Public License v2.0 or later (GPL-2.0-or-later)**.
+This repository currently does not include an explicit
+open-source license.
 
-See the license information included with the project.
+All rights remain reserved under applicable copyright law.
+No permission to reuse, distribute, or modify this code
+is granted by an open-source license at this time.
 
 ## Maintainer
 
